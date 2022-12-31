@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        #container {
+            display: grid;
+            grid-template-rows: 100px 650px;
+        }
+        
+        #header {
+            background-color: aqua;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
+        
+        image {
+            position: absolute;
+            top: 10px;
+        }
+        
+        span {
+            margin: 0 20px;
+        }
+        
+        #sanpham {
+            display: inline;
+        }
+        
+        #than {
+            background-color: chartreuse;
+            display: grid;
+            grid-template-columns: 0.7fr 3fr;
+        }
+        
+        #menu {
+            background-color: rgb(245, 239, 233);
+        }
+        
+        #bo>li>a {
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            width: 100%;
+            padding: 5px 0;
+            border-bottom: 1px solid black;
+            font-size: 18px;
+            color: rgb(10, 9, 9);
+        }
+        
+        #bo>li>#danhmuc {
+            background-color: cornflowerblue;
+        }
+        
+        #bo>li {
+            position: relative;
+        }
+        
+        #bo2 {
+            width: 160px;
+            height: 150px;
+            background-color: rgb(239, 239, 239);
+            position: absolute;
+            right: -160px;
+            top: -1px;
+            display: none;
+        }
+        
+        #bo2 li a {
+            display: block;
+            text-align: center;
+            line-height: 25px;
+            width: 100%;
+            padding: 8px 0px;
+            border-bottom: 1px solid red;
+            color: black;
+        }
+        
+        #bo>li:hover #bo2 {
+            display: block;
+        }
+        
+        #item1 {
+            height: 70px;
+            width: 100px;
+        }
+        
+        #sanpham {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #content {
+            display: grid;
+            grid-template-rows: 100px 500px;
+        }
+        
+        #dau {
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+        
+        #than {
+            background-color: rgb(43, 226, 110);
+            padding: 10px 15px;
+            float: left;
+        }
+    </style>
+    <div id="container">
+        <div id="header">
+            <div>
+
+                <image src="/thuchanh/messi.jpg" width="100px" height="60px" padding="15px "></image>
+                <input type="text" placeholder="tim kiem ...">
+                <span>Manh cute</span>
+                <span>Manh cute</span>
+                <span>Manh cute</span>
+                <span>Manh cute</span>
+                <span>Manh cute</span>
+                <span>Manh cute</span>
+                <span>Manh cute</span>
+            </div>
+        </div>
+        <div id="than">
+            <div id="menu">
+                <ul id="bo">
+                    <li><a id="danhmuc" href="#">DANH MUC SAN PHAM</a></li>
+                    <li><a href="#">Khuyen mai</a></li>
+                    <li><a href="#">Dien thoai</a></li>
+                    <li>
+                        <a href="#">dien thoai</a>
+                        <ul id="bo2">
+                            <li><a href="#">dien thoai</a></li>
+                            <li><a href="#">dien thoai</a></li>
+                            <li><a href="#">Dien thoai</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">dien thoai</a></li>
+                    <li><a href="#">dien thoai</a></li>
+                    <li><a href="#">Dien thoai</a></li>
+                    <li><a href="#">Dien thoai</a></li>
+                    <li><a href="#">Dien thoai</a></li>
+                    <li><a href="#">Dien thoai</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="dau">
+                    <h2>Lap top cu</h2>
+                    <div>
+                        <span>Sap xep theo : </span> <select>
+                            <option value="">Manh</option>
+                            <option value="">Manh</option>
+                            <option value="">Manh</option>
+                            <option value="">Manh</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div id="than">
+                    <div class="laptop">
+                        <div class="anh">
+                            <image src="/thuchanh/messi.jpg" width="120px" height="80px"></image>
+                            <p>The new mã book</p>
+                            <p>200.000$</p>
+                        </div>
+                    </div>
+                    <div class="laptop">
+                        <div class="anh">
+                            <image src="/thuchanh/messi.jpg" width="120px" height="80px"></image>
+                            <p>The new mã book</p>
+                            <p>200.000$</p>
+                        </div>
+                    </div>
+                    <div class="laptop">
+                        <div class="anh">
+                            <image src="/thuchanh/messi.jpg" width="120px" height="80px"></image>
+                            <p>The new mã book</p>
+                            <p>200.000$</p>
+                        </div>
+                    </div>
+                    <div class="laptop">
+                        <div class="anh">
+                            <image src="/thuchanh/messi.jpg" width="120px" height="80px"></image>
+                            <p>The new mã book</p>
+                            <p>200.000$</p>
+                        </div>
+                    </div>
+                    <div class="laptop">
+                        <div class="anh">
+                            <image src="/thuchanh/messi.jpg" width="120px" height="80px"></image>
+                            <p>The new mã book</p>
+                            <p>200.000$</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
